@@ -3,35 +3,32 @@
 ## Install
 
 ```shell
-pnpm install
-pnpm run build
-./bin/index.js
+npm install @chepe/ts-cli-template
 ```
 
-## Available Commands
+## Usage
+
+**List directories**
 
 ```shell
-./bin/index.js -h
-./bin/index.js -V
-./bin/index.js -ls
-./bin/index.js -weather
+ts-cli-template -ls
+ts-cli-template --ls ~/
 ```
 
-List directories
+**Check the Weather**
 
 ```shell
-./bin/index.js -ls
-./bin/index.js --ls ~/
+ts-cli-template --weather
 ```
 
-Check Version
+**Check Version**
 
 ```shell
-./bin/index.js -V
+ts-cli-template -V
 ```
 
-Help
+**Help**
 
 ```shell
-./bin/index.js -h
+ts-cli-template -h
 ```
