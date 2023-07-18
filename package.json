@@ -1,0 +1,39 @@
+{
+  "name": "ts-cli-template",
+  "version": "0.0.1",
+  "description": "A preconfigured project template for quickly starting a new TypeScript cli",
+  "license": "MIT",
+  "author": {
+    "name": "José Manuel Gulias Lugo Chepe",
+    "email": "me@joselugo.dev",
+    "url": "https://joselugo.dev"
+  },
+  "main": "./dist/index.js",
+  "bin": {
+    "ts-cli-template": "bin/index.cjs"
+  },
+  "directories": {
+    "dist": "dist"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "tsup --watch"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "cross-fetch": "^4.0.0",
+    "figlet": "^1.6.0",
+    "tmp": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.6",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.2",
+    "@types/tmp": "^0.2.3",
+    "jest": "^29.6.1",
+    "tsc-watch": "^6.0.4",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  }
+}
