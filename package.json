@@ -1,5 +1,5 @@
 {
-  "name": "ts-cli-template",
+  "name": "@chepe/ts-cli-template",
   "version": "0.0.1",
   "description": "A preconfigured project template for quickly starting a new TypeScript cli",
   "license": "MIT",
