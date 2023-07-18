@@ -2,7 +2,6 @@ import path from 'path';
 import { Command } from 'commander';
 import figlet from 'figlet';
 
-import getPackageJson from './utils/get-package-json';
 import {
   listDirContents,
   createDir,
@@ -10,16 +9,11 @@ import {
 } from './utils/file-management';
 import { getWeather } from './utils/weather';
 
-const packageJson = getPackageJson();
-const name: string = packageJson.name;
-const version: string = packageJson.version;
-
-console.log(figlet.textSync(name));
+console.log(figlet.textSync('ts-cli'));
 const program = new Command();
 
 program
-  .name(name)
-  .version(version)
+  .name('ts-cli')
   .description('An example CLI tool')
   .option('-l, --ls  [value]', 'List directory contents')
   .option('-m, --mkdir <value>', 'Create a directory')

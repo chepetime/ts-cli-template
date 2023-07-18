@@ -17,4 +17,4 @@ interface PackageJson {
 
 // read package.json and return its contents
 export default (): PackageJson =>
-  JSON.parse(fs.readFileSync('package.json', 'utf8'));
+  JSON.parse(fs.readFileSync('./package.json', 'utf8'));
